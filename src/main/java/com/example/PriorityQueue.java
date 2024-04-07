@@ -4,5 +4,5 @@ public interface PriorityQueue<E> {
     public boolean isEmpty();
     public E remove();
     public void add(E paciente);
-    public void ordenar(int leaf);
+    public void ordenar(int paciente);
 }
