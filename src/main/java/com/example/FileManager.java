@@ -6,7 +6,12 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * Clase FileManager que se encarga de leer un archivo de texto con información de pacientes y crear objetos Paciente a partir de los datos leídos.
+ */
 public class FileManager {
+
+    //Lee un archivo de texto con información de pacientes y devuelve una lista de objetos Paciente.
     public List<Paciente> leerArchivo(String nombreArchivo) {
         List<Paciente> pacientes = new ArrayList<>();
 
@@ -25,7 +30,6 @@ public class FileManager {
         } catch (IOException e) {
             System.err.println("Error al leer el archivo: " + e.getMessage());
         }
-
         return pacientes;
     }
 }
